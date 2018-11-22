@@ -1,0 +1,28 @@
+{
+    "env":
+    {
+        "dev":
+        {
+            "Constants":
+            {
+                "CONFIG":
+                {
+                    "CONNECTION_URL": "http://testdev.featurephone.com",
+                    "VERSION":"1.0.0"
+                }
+            }
+               
+        },
+        "prod":
+        {
+            "Constants":
+            {
+                "CONFIG":
+                {
+                    "CONNECTION_URL": "http://test.featurephone.com",
+                    "VERSION": "1.0.0"
+                }
+            }
+        }
+    }
+}

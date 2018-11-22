@@ -1,0 +1,200 @@
+* {
+    outline: none;
+}
+
+body {
+    color: #000;
+    font-size: 14px;
+    margin: 28px 0;
+    padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ul li,
+p {
+    padding: 0px;
+    margin: 0px;
+
+    list-style-type: none;
+}
+
+.tabs{
+    background-color: #24397a;
+    position: relative;
+    top: 55px;
+    overflow: hidden;
+}
+.tabs li {
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 2px 36px;
+    font-size: 17px;
+    width: 50%;
+    height: 10%;
+    color: #8c93a9;
+}
+
+.tabs li.active{
+    color:#fff !important;
+}
+
+.tabs li.active:focus{
+    background:#414d92;
+}
+.tabs li.active .activeTab{
+    height: 2px;
+    position: relative;
+    top: 1px;
+    left: -36px;
+    width: 248%;
+    background-color: #fff;
+}
+
+.scrollArea {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow: hidden;
+}
+#upperpadding {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 28px;
+    background: #24397a;
+    z-index: 100112;
+    display: none;
+}
+
+/*About*/
+
+
+.scrollArea {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow: hidden;
+}
+
+/*Spinner Loader*/
+
+/* loader css */
+
+
+/*Header*/
+
+header {
+    position: fixed;
+    z-index: 1111;
+    left: 0px;
+    right: 0px;
+    top: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+    background: #24397a;
+    box-sizing: border-box;
+    padding: 0 6px;
+    margin: 0px;
+    font-size: 20px;
+    text-transform: capitalize;
+    display: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*Footer*/
+
+/*--- Page:footer ---*/
+
+#footer {
+    position: fixed;
+    z-index: 1111;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #000;
+    background: #e6e6e6;
+    box-sizing: border-box;
+    display: -webkit-flex;
+    /* Safari */
+    -webkit-justify-content: space-between;
+    /* Safari 6.1+ */
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+#footer div {
+    box-sizing: border-box;
+}
+
+#footer .inactive {
+    color: #ccc;
+    background: #e6e6e6;
+}
+
+#footer .active {
+    color: #000;
+    background: #e6e6e6;
+}
+
+#footer .defaultActive {
+    color: #000;
+    background: #e6e6e6;
+}
+
+#leftKey {
+    width: 40%;
+}
+#footer .footercentre {
+    position: absolute;
+    left: 46%;
+    margin: 4px 0 0 0;
+    font-size: 18px;
+    width: 20px;
+    height: 20px;
+    background: url(../assets/img/tick-circle-01.png) center center no-repeat;
+    text-indent: -9999px;
+    /* background-size: contain; */
+    width: 20px;
+    height: 20px;
+}
+
+#leftKey {
+    text-align: left;
+    padding: 0 0 0 10px;
+}
+
+#rightKey {
+    text-align: right;
+    padding: 0 10px 0 0;
+}
+
+
+/*Home*/
+
+#home {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 78px;
+    bottom: 0px;
+}

@@ -1,0 +1,44 @@
+<style>
+#carousel {
+    position: relative;
+    top: 15px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 120px;
+    white-space: nowrap;
+}
+
+#carousel .slide {
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 100px;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 3px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block; 
+}
+#dots{
+    text-align: center;
+    padding-top: 15px;
+}
+
+#carousel div:focus img{
+    border: 2px solid #24397a;
+}
+
+</style>
+<div id="home">
+    <div id="carousel" >
+        <div ng-focus="$ctrl.focusedCarousel($index)" ng-click="$ctrl.imageClicked(address)" class="slide navigable" ng-repeat="address in $ctrl.images track by $index">
+            <img ng-src="{{address}}" style="width:100%">
+        </div>
+    </div>
+    <div id="dots"><span class="dot" ng-repeat="a in $ctrl.images" ></span> </div> 
+</div>

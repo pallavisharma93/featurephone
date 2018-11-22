@@ -1,0 +1,32 @@
+{
+  "name": "featurephone",
+  "version": "1.0.0",
+  "description": "Sample application for feature phone",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -p 8001",
+    "build": "echo \"Error: no build specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pallavisharma93/featurephone.git"
+  },
+  "keywords": [
+    "keypad",
+    "feature phone"
+  ],
+  "author": "Pallavi Pathak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pallavisharma93/featurephone/issues"
+  },
+  "homepage": "https://github.com/pallavisharma93/featurephone#readme",
+  "dependencies": {
+    "angular": "^1.6.0",
+    "angular-route": "^1.6.0",
+    "http-server": "^0.11.1",
+    "jquery": "^3.2.1",
+    "naviboard": "^4.1.0"
+  }
+}

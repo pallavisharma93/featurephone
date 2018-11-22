@@ -1,0 +1,52 @@
+<style type="text/css">
+.square {
+    height: 100px;
+}
+
+#twoBytwo {
+    position: relative;
+    top: 45px;
+    padding: 10px;
+}
+
+/*#twoBytwo div {
+    width: 50%;
+}*/
+
+.image-wrapper {
+    box-sizing: border-box;
+    float: left;
+    margin-bottom: 5px;
+    width: 50%;
+}
+
+.image-wrapper:nth-child(even) {
+    padding-left: 5px;
+}
+
+.image-wrapper:nth-child(odd) {
+    padding-right: 5px;
+}
+
+.image-wrapper>img {
+    width: 100%;
+}
+
+.image-wrapper>span {
+    display: inline-block;
+    width: 100%;
+}
+
+#twoBytwo div:focus img {
+    border: 2px solid #24397a;
+}
+</style>
+<div id="tabTwo">
+    <div id="twoBytwo">
+        <div class="image-wrapper navigable" ng-repeat="address in $ctrl.images track by $index" ng-keydown="$ctrl.checkFocus($event,$index)">
+            <img class="square" ng-src="{{address}}" style="width:100%">
+        </div>
+        </div>
+        <!-- <div id="dots"><span class="dot" ng-repeat="a in $ctrl.images" ></span> </div>  -->
+    </div>
+</div>
